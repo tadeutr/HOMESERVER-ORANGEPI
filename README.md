@@ -85,7 +85,7 @@ Docker
 
 ## Sistema Operacional
 
-- Ubuntu Server 24.04 LTS
+- Armbian Ubuntu 26.04 LTS Minimal (CLI) (https://armbian.com/boards/orangepi4-lts)
 
 
 ## Containerização
