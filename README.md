@@ -1,6 +1,8 @@
 # HOMESERVER-ORANGEPI
 # 🖥️ Home Server Orange Pi
 
+PADRÃO DA SENHAS: NOME+ADESEMPRE+ARR 
+
 Infraestrutura de servidor doméstico baseada em Orange Pi 4 Pro, Ubuntu Server, Docker e serviços auto-hospedados.
 
 O objetivo deste projeto é construir um ambiente organizado, seguro e documentado para hospedar aplicações próprias, bancos de dados, arquivos pessoais e serviços web, utilizando conceitos de infraestrutura como código e boas práticas de DevOps.

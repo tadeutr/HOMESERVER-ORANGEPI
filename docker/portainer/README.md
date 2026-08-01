@@ -37,4 +37,4 @@ Caso isso ocorra, reinicie o serviço:
 docker compose down
 docker compose up -d
 
-e utilize o novo token.
+e utilize o novo token gerado.
