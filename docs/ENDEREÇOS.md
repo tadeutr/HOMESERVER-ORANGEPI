@@ -10,7 +10,8 @@ http://192.168.0.10
 
 Portainer:
 http://192.168.0.10:9443
-
+User: Admin
+Senha: Padrão Home Server
 
 ## Monitoramento
 
@@ -26,8 +27,10 @@ http://192.168.0.10:81
 
 ## Aplicações
 
-TradePy:
-https://trade.seudominio.com
+Rico Trade System:
+https://rts.trisystem.com.br
+
+Local (na rede do servidor): http://192.168.0.10:8501
 
 TripoliPy Web:
-https://tripoli.seudominio.com
+https://tripoli.trisystem.com.br

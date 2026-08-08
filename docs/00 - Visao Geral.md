@@ -1,16 +1,3 @@
-Este documento responderá:
-
-O que é este servidor?
-
-Quando alguém abrir a documentação pela primeira vez, este será o primeiro arquivo que lerá.
-
-Ele explicará:
-
-objetivo do Home Server;
-filosofia do projeto;
-serviços previstos;
-benefícios da arquitetura;
-escopo do projeto.
 
 ## ---------------------------------------------------------------------------------
 
@@ -39,7 +26,7 @@ Equipamento principal
 
 # Sistema Operacional
 
-- Ubuntu Server 24.04 LTS
+Orange Pi 1.0.6 Jammy with Linux 5.15.147-sun60iw2
 
 ---
 
@@ -75,10 +62,6 @@ Novos serviços poderão ser adicionados futuramente sem necessidade de reconstr
 
 ---
 
-# Filosofia do Projeto
-
-Este projeto seguirá alguns princípios básicos.
-
 ## Infraestrutura como Código
 
 Sempre que possível, toda configuração deverá estar documentada ou armazenada em arquivos versionados.
@@ -91,14 +74,13 @@ Evita configurações manuais difíceis de reproduzir.
 
 Os serviços serão executados em containers Docker.
 
-Nenhum serviço será instalado diretamente no sistema operacional, salvo quando estritamente necessário.
+Nenhum serviço será instalado diretamente no sistema operacional, salvo quando estritamente necessário. Como o caso do Cloudflare Tunnel
 
 ---
 
 ## Separação entre Sistema e Dados
 
 Containers podem ser recriados.
-
 Os dados devem permanecer preservados através de volumes Docker.
 
 ---
@@ -166,3 +148,16 @@ Fase 10 — Backup e Recuperação
 # Objetivo Final
 
 Ao término deste projeto, espera-se possuir um Home Server totalmente funcional, seguro, documentado e preparado para futuras expansões, podendo ser migrado para outro hardware com o mínimo de esforço.
+
+
+
+## Serviços do Sistema
+
+Ou seja, tudo aquilo que não roda em container, por exemplo:
+- cloudflared
+- Tailscale
+- OpenSSH
+- UFW
+
+Esses serão considerados serviços do Ubuntu, não da infraestrutura Docker.
+Essa separação vai facilitar muito a administração no futuro.

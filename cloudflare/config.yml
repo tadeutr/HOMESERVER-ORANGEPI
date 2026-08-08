@@ -1,0 +1,9 @@
+tunnel: 3a35397c-7b30-4aeb-bce0-5b4f20ad11bd
+
+credentials-file: /etc/cloudflared/3a35397c-7b30-4aeb-bce0-5b4f20ad11bd.json
+
+ingress:
+  - hostname: rts.trisystem.com.br
+    service: http://localhost:8501
+
+  - service: http_status:404

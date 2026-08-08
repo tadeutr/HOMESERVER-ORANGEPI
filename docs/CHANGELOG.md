@@ -20,7 +20,6 @@ Este documento registra os principais marcos, decisões e alterações relevante
 
 Definidas as seguintes diretrizes:
 
-- utilização do Ubuntu Server 24.04 LTS;
 - utilização de Docker como plataforma principal de serviços;
 - utilização de Docker Compose para gerenciamento dos containers;
 - organização dos dados separados dos containers;
@@ -39,9 +38,3 @@ diagrams/
 images/
 ```
 
-## Próximas etapas
-
-- finalizar documentação da arquitetura;
-- documentar hardware;
-- definir padrões de nomenclatura;
-- preparar implantação do Orange Pi.
