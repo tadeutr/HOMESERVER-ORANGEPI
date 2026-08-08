@@ -69,8 +69,8 @@ Monitoramento
 - [x] Orange Pi 4 Pro
 - [x] SSD NVMe
 - [x] Fonte USB-C 5V / 3A
-- [ ] microSD
-- [ ] Cabo de Rede
+- [x] microSD
+- [x] Cabo de Rede
 
 ---
 
@@ -79,7 +79,7 @@ Monitoramento
 - [x] Download da imagem Ubuntu Server oficial
 - [x] Extração do arquivo .7z
 - [ ] Verificação do SHA256
-- [ ] Gravação da imagem no microSD
+- [ ] Gravação da imagem no microSD BELANA
 - [ ] Primeiro Boot
 - [ ] Configuração do Boot pelo NVMe
 - [ ] Remoção do microSD
