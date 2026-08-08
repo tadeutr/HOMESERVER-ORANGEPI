@@ -7,12 +7,15 @@ services:
     restart: unless-stopped
 
     ports:
-      - "8000:8000"
       - "9443:9443"
 
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
+      - /Docker/volumes/portainer:/data
 
-volumes:
-  portainer_data:
+    networks:
+      - homeserver
+
+networks:
+  homeserver:
+    external: true

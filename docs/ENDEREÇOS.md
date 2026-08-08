@@ -9,7 +9,7 @@ http://192.168.0.10
 ## Administração
 
 Portainer:
-http://192.168.0.10:9000
+http://192.168.0.10:9443
 
 
 ## Monitoramento
