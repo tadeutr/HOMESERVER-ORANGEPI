@@ -2,6 +2,9 @@
 
 MySQL utilizado pelo Home Server Orange Pi.
 
+Usuário: Admin
+Senha: Nome+adesempre   ---> Não tem o arr
+
 ## Arquitetura
 
 O MySQL utiliza a rede Docker externa `homeserver`.
