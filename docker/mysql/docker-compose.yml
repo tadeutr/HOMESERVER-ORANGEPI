@@ -1,13 +1,9 @@
 services:
   mysql:
     image: mysql:8.4
-
     container_name: mysql
 
     restart: unless-stopped
-
-    ports:
-      - "3306:3306"
 
     env_file:
       - .env
@@ -21,16 +17,27 @@ services:
       --collation-server=utf8mb4_unicode_ci
 
     volumes:
-      - mysql_data:/var/lib/mysql
+      - /Docker/volumes/mysql:/var/lib/mysql
       - ./conf.d:/etc/mysql/conf.d:ro
       - ./init:/docker-entrypoint-initdb.d:ro
-      - ./backups:/backups
+
+    networks:
+      - homeserver
 
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-p${MYSQL_ROOT_PASSWORD}"]
+      test:
+        [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "localhost",
+          "-p${MYSQL_ROOT_PASSWORD}"
+        ]
       interval: 30s
       timeout: 10s
       retries: 5
 
-volumes:
-  mysql_data:
+networks:
+  homeserver:
+    external: true

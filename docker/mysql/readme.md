@@ -1,30 +1,27 @@
-# MySQL
+# MySQL 8.4 LTS
+
+MySQL utilizado pelo Home Server Orange Pi.
+
+## Arquitetura
+
+O MySQL utiliza a rede Docker externa `homeserver`.
+
+Não existe publicação da porta 3306 no host.
+
+Os dados persistentes ficam em:
+
+`/Docker/volumes/mysql`
+
+Os backups ficam em:
+
+`/Docker/backups/mysql`
+
+## Schemas
+
+- `bd_tripoli`
+- `bd_ricotradesys`
 
 ## Subir
 
 ```bash
 docker compose up -d
-```
-
-## Parar
-
-```bash
-docker compose down
-```
-
-## Logs
-
-```bash
-docker logs mysql
-```
-
-## Verificar saúde
-
-```bash
-docker inspect mysql
-```
-
-## Schemas criados
-
-- bd_tripolipy
-- bd_ricotradesys
