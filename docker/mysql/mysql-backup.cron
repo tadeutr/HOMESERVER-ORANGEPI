@@ -1,0 +1,1 @@
+0 3 * * * root /home/orangepi/Projetos/HOMESERVER-ORANGEPI/docker/mysql/backup.sh >> /Docker/logs/mysql-backup.log 2>&1
