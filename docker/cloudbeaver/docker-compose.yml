@@ -1,0 +1,20 @@
+services:
+
+  cloudbeaver:
+
+    image: dbeaver/cloudbeaver:latest
+
+    container_name: cloudbeaver
+
+    restart: unless-stopped
+
+    volumes:
+      - /Docker/volumes/cloudbeaver:/opt/cloudbeaver/workspace
+
+    networks:
+      - homeserver
+
+networks:
+
+  homeserver:
+    external: true
