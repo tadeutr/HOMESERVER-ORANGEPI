@@ -5,6 +5,9 @@ MySQL utilizado pelo Home Server Orange Pi.
 Usuário: Admin
 Senha: Nome+adesempre   ---> Não tem o arr
 
+Comando no prompt do servidor para listar os backups:
+sudo ls -lah /Docker/backups/mysql
+
 ## Arquitetura
 
 O MySQL utiliza a rede Docker externa `homeserver`.
