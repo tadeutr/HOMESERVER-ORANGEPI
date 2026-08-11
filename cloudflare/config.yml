@@ -3,7 +3,21 @@ tunnel: 3a35397c-7b30-4aeb-bce0-5b4f20ad11bd
 credentials-file: /etc/cloudflared/3a35397c-7b30-4aeb-bce0-5b4f20ad11bd.json
 
 ingress:
+
+  # ==================================================
+  # Aplicações
+  # ==================================================
+
   - hostname: rts.trisystem.com.br
     service: http://localhost:8501
+
+  # ==================================================
+  # Administração
+  # ==================================================
+
+  - hostname: db.trisystem.com.br
+    service: http://cloudbeaver:8978
+
+  # ==================================================
 
   - service: http_status:404
