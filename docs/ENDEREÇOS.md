@@ -24,6 +24,12 @@ https://dash.cloudflare.com/login
 tadeu.tripoli@gmail.com
 Nome+adesempre+arr
 
+## Cloudbeaver (Mysql Administador = Workbench)
+
+https://bd.trisystem.com.br/
+User: tadeu
+Nome+adesempre+arr
+
 ## Proxy
 
 Nginx Proxy Manager:
