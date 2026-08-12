@@ -8,6 +8,9 @@ services:
 
     restart: unless-stopped
 
+    ports:
+      - "127.0.0.1:8978:8978"
+
     volumes:
       - /Docker/volumes/cloudbeaver:/opt/cloudbeaver/workspace
 
