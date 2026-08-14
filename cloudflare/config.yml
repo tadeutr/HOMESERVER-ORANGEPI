@@ -19,5 +19,14 @@ ingress:
     service: http://127.0.0.1:8978
 
   # ==================================================
+  # Administração
+  # ==================================================
+  
+  - hostname: portainer.trisystem.com.br
+    service: https://localhost:9443
+    originRequest:
+      noTLSVerify: true  
+  
+  # ==================================================
 
   - service: http_status:404
